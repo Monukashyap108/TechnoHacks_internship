@@ -1,0 +1,5 @@
+email = Monu@gmail.com
+password  = 00123
+
+import the login.sql file in your xampp server and execute the login form
+ thank you 
