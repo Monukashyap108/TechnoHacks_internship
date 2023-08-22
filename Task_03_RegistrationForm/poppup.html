@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .popup{
+    border: 2px solid;
+    width: 450px;
+    position: relative;
+    left:22%;
+    top:0%;
+    height: 300px;
+    background-color: white;
+    text-align: center;
+    transform: translate(-50%,-50%) scale();
+    transition: transform .4s top .4s;
+    visibility: hidden;
+
+     
+   }
+    
+    
+   
+   .h2{
+    
+   }
+   img{
+    width: 70px;
+    margin-top: 13px;
+   }
+   #OK
+   {
+    position: relative;
+    left:-40px;
+    width: 330px;
+    height: 30px;
+    border: none;
+    background:  rgb(98, 187, 98);
+    border-radius: 5px;
+    margin-left: 60px;
+   }
+   #OK:hover{
+    top:50%;
+    transform: translate(-50%,-50%) scale(1);
+    visibility: visible;
+   }
+
+    
+    </style>
+</head>
+<body>
+    <div class="popup" id="popup">
+        <img src="OIP.jpeg" alt="">
+        <h2>Thanks you</h2>
+        <p class="p"> Your Registration Sucessfully.Thanks</p>
+        <button id="OK">OK</button>
+    </div>
+    <button id ="OK" >Submit</button>
+</body>
+<script>
+    let popup = document.getElementById("popup");
+    function open()
+    {
+        popup.classList.add("popup");
+    }
+</script>
